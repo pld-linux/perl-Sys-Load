@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Sys
-%define		pnam	Load
+%define	pdir	Sys
+%define	pnam	Load
 Summary:	Sys::Load - Perl module for getting the current system load and uptime
 Summary(pl):	Sys::Load - modu³ Perla do odczytywania obci±¿enia systemu i uptime'u
 Name:		perl-Sys-Load
