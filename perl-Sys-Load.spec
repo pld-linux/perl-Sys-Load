@@ -9,7 +9,7 @@ Summary:	Sys::Load - Perl module for getting the current system load and uptime
 Summary(pl):	Sys::Load - modu³ Perla do odczytywania obci±¿enia systemu i uptime'u
 Name:		perl-Sys-Load
 Version:	0.2
-Release:	4
+Release:	5
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -48,9 +48,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%dir %{perl_vendorarch}/Sys
 %{perl_vendorarch}/Sys/*.pm
-%dir %{perl_vendorarch}/auto/Sys
 %dir %{perl_vendorarch}/auto/Sys/Load
 %attr(755,root,root) %{perl_vendorarch}/auto/Sys/Load/*.so
 %{perl_vendorarch}/auto/Sys/Load/*.bs
