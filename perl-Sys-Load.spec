@@ -3,13 +3,13 @@
 # _without_tests - do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Sys
-%define	pnam	Load
+%define		pdir	Sys
+%define		pnam	Load
 Summary:	Sys::Load - Perl module for getting the current system load and uptime
 Summary(pl):	Sys::Load - modu³ Perla do odczytywania obci±¿enia systemu i uptime'u
 Name:		perl-Sys-Load
 Version:	0.2
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -46,8 +46,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change* README
-%{perl_sitearch}/%{pdir}/*.pm
-%dir %{perl_sitearch}/auto/%{pdir}/%{pnam}
-%attr(755,root,root) %{perl_sitearch}/auto/%{pdir}/%{pnam}/*.so
-%{perl_sitearch}/auto/%{pdir}/%{pnam}/*.bs
+%dir %{perl_sitearch}/Sys
+%{perl_sitearch}/Sys/*.pm
+%dir %{perl_sitearch}/auto/Sys
+%dir %{perl_sitearch}/auto/Sys/Load
+%attr(755,root,root) %{perl_sitearch}/auto/Sys/Load/*.so
+%{perl_sitearch}/auto/Sys/Load/*.bs
 %{_mandir}/man3/*
