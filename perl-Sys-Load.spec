@@ -10,7 +10,8 @@ Summary(pl):	Sys::Load - modu³ Perla do odczytywania obci±¿enia systemu i uptime
 Name:		perl-Sys-Load
 Version:	0.2
 Release:	5
-License:	GPL/Artistic
+# sae as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	370372db0ddbcde3725049157e0bc5ad
@@ -33,7 +34,8 @@ sekundach.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
