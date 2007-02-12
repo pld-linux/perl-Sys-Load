@@ -6,7 +6,7 @@
 %define		pdir	Sys
 %define		pnam	Load
 Summary:	Sys::Load - Perl module for getting the current system load and uptime
-Summary(pl):	Sys::Load - modu³ Perla do odczytywania obci±¿enia systemu i uptime'u
+Summary(pl.UTF-8):   Sys::Load - moduÅ‚ Perla do odczytywania obciÄ…Å¼enia systemu i uptime'u
 Name:		perl-Sys-Load
 Version:	0.2
 Release:	5
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 getload() returns 3 elements: representing load averages over the last
 1, 5 and 15 minutes.  uptime() returns the system uptime in seconds.
 
-%description -l pl
-getload() zwraca 3 warto¶ci, reprezentuj±ce ¶rednie obci±¿enie systemu
-w ci±gu ostatnich 1, 5 i 15 minut. uptime() zwraca uptime systemu w
+%description -l pl.UTF-8
+getload() zwraca 3 wartoÅ›ci, reprezentujÄ…ce Å›rednie obciÄ…Å¼enie systemu
+w ciÄ…gu ostatnich 1, 5 i 15 minut. uptime() zwraca uptime systemu w
 sekundach.
 
 %prep
