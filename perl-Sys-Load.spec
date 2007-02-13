@@ -6,7 +6,7 @@
 %define		pdir	Sys
 %define		pnam	Load
 Summary:	Sys::Load - Perl module for getting the current system load and uptime
-Summary(pl.UTF-8):   Sys::Load - moduł Perla do odczytywania obciążenia systemu i uptime'u
+Summary(pl.UTF-8):	Sys::Load - moduł Perla do odczytywania obciążenia systemu i uptime'u
 Name:		perl-Sys-Load
 Version:	0.2
 Release:	5
