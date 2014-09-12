@@ -56,5 +56,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Sys/*.pm
 %dir %{perl_vendorarch}/auto/Sys/Load
 %attr(755,root,root) %{perl_vendorarch}/auto/Sys/Load/*.so
-%{perl_vendorarch}/auto/Sys/Load/*.bs
 %{_mandir}/man3/*
